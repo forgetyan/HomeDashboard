@@ -1,6 +1,6 @@
 FROM lojzik/rpi-aspnet:1.0.0-rc1-final
 
-COPY ./app /app
+COPY . /app
 WORKDIR /app/HomeDashboard/src/HomeDashboardWeb
 RUN ["dnu", "restore"]
 
